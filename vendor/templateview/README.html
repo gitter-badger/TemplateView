@@ -1,0 +1,23 @@
+<h1>TemplateView</h1><p><a href="https://nodejs.org/api/documentation.html#documentation_stability_index"><img src="https://img.shields.io/badge/stability-experimental-orange.svg?style=flat-square" alt="stability"></a>
+<a href="https://badge.fury.io/bo/templateview"><img src="https://badge.fury.io/bo/templateview.svg" alt="Bower version"></a></p>
+<h2>What?</h2><p>TemplateView is an extension of <a href="https://github.com/jashkenas/backbone">Backbone</a>&#39;s View class, and is inspired by
+<a href="https://github.com/marionettejs/backbone.marionette">Marionette</a> and <a href="https://github.com/facebook/react">React</a>.  It aims to enable you to build a <a href="https://facebook.github.io/flux/docs/overview.html">Flux</a> style
+architechture with Backbone&#39;s core components. Essentially you create a tree of
+View+Template combos and render the entire tree each time the data&#39;s state changes.
+This offers the opportunity to design schemas that work really well with templates
+and keep views small.</p>
+<p>The extension aims to offer template designers more control over user experience
+while staying outside of the core codebase. It is built around the use of inline
+templates as a means of efficient prototyping.  The default template engine is 
+<a href="https://github.com/mozilla/nunjucks">Nunjucks</a>, which offers a great sandbox with just enough logic to set up the
+various UI states that an app may require.</p>
+<p>Much like how React works with a virtual dom to allow for this, TemplateView works
+with <a href="https://github.com/patrick-steele-idem/morphdom">morphdom</a> to accomplish DOM diffing.</p>
+<blockquote>
+<p>Note: This is still experimental, but that also means you can help make it better!</p>
+</blockquote>
+<p>You can find an example &quot;todomvc&quot; app <a href="https://github.com/howardroark/TemplateView/tree/gh-pages">here</a>.</p>
+<h3>Install</h3><pre><code>$ bower install templateview
+</code></pre><h3>Develop</h3><pre><code>$ npm install
+$ npm start
+</code></pre>
